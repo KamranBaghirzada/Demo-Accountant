@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: basic-accounts
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+  datasource:
+    username: postgres
+    password: password
+    url: jdbc:postgresql://localhost:5432/AccountantDB
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 7070
+  error:
+    include-stacktrace: never
+    include-message: always
+
+
